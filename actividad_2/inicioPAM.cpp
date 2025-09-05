@@ -3,7 +3,7 @@
 
 void opc1(){
     printf("\t\tReglamento POO\n");
-    printf("1. Se requiere el 80% de asistencia para tener derecho a evaluacion parcial y 80% de trabajos en clase.\n");
+    printf("1. Se requiere el 80%% de asistencia para tener derecho a evaluacion parcial y 80%% de trabajos en clase.\n");
     printf("2. Se permiten 10 minutos de tolerancia y si el alumno llega despues de este tiempo puede permanecer en la clase, pero no se tomara la asistencia(Solamente en los horarios de inicio 7:00 a.m. y 14:00 p.m.).\n");
     printf("3. Las faltas deveran estar jutificadas mediante el correo institucional con un plazo maximo a 24 horas posteriores a la hora de falta en clase mediante correo del tutor(a).\n");
     printf("justificantes entregados fuera de la fecha limite permitida no seran aceptadas,unicamente se aceptaran recetas medicas y citatorios juridicos.\n");
@@ -27,10 +27,10 @@ void opc1(){
 void opc2(){
     printf("\t\tPorcentajes por Parcial\n");
     printf("					1p		2p		3p\n\n");
-    printf("Evideoncia de conocimiento		40 		40 		20 \n");
-    printf("Evidencia de desempeno			20 		20 		10 \n");
-    printf("Evidencia de producto			30 		20 		40 \n");
-    printf("proyecto integrador			10 		20 		30 \n");
+    printf("Evideoncia de conocimiento		40%% 		40%% 		20%% \n");
+    printf("Evidencia de desempeno			20%% 		20%% 		10%% \n");
+    printf("Evidencia de producto			30%% 		20%% 		40%% \n");
+    printf("proyecto integrador			10%% 		20%% 		30%% \n");
     printf("\n\n\n\n");
     
 }
