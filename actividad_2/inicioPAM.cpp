@@ -1,7 +1,10 @@
 
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
-void opc1(){
+class inicioPAM{
+private:    
+    void opc1(){
     printf("\t\tReglamento POO\n");
     printf("1. Se requiere el 80%% de asistencia para tener derecho a evaluacion parcial y 80%% de trabajos en clase.\n");
     printf("2. Se permiten 10 minutos de tolerancia y si el alumno llega despues de este tiempo puede permanecer en la clase, pero no se tomara la asistencia(Solamente en los horarios de inicio 7:00 a.m. y 14:00 p.m.).\n");
@@ -51,7 +54,8 @@ void opc4(){
     printf("\n\n\n");
 }
 
-int main(){
+public:
+void menu(){
     int opc;
     do{
     printf("Bienvenido\n");
@@ -83,6 +87,11 @@ int main(){
         
     }
     }while(opc!=0);
+}
+};
 
+int main(){
+    inicioPAM app;
+    app.menu();
     return 0;
 }
