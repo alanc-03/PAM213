@@ -1,4 +1,4 @@
-let passwordDB = 'pepe123'
+/*let passwordDB = 'pepe123'
 
 let input = 'pepe'
 
@@ -10,10 +10,19 @@ if(result == true){
     console.log('login incorrecto');
 }
 
-/*if(result == false){
+if(result == false){
     console.log('login incorrecto');
-}*/
+}
 
 
 
-console.log(result);
+console.log(result);*/
+
+let score = 70;
+if(score > 30) {
+    console.log('you need to practice more')
+}else if(score > 15) {
+    console.log('estas mejorando')
+}else{
+    console.log('you need to follow this tutorial')
+}
