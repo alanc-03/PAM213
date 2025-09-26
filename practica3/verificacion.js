@@ -2,10 +2,10 @@ function verificarUsuario(usuario){
     return new Promise((resolve, reject) => {
     
         setTimeout(() => {
-            if(usuario==="admin"){
+            if(usuario=="admin"){
             resolve("acceso concedido.")
         } else {
-            reject("los datos no concuerdan.")
+            reject("accseso denegado.")
         }
         }, 2000);
         
