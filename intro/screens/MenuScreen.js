@@ -2,6 +2,7 @@ import { Text, StyleSheet, View, Button } from 'react-native'
 import React, { useState } from 'react'
 import ContadorScreen from './ContadorScreen'
 import BotonesScreen from './BotonesScreen'
+import TextoinputScreen from './TextoinputScreen';
 
 export default function MenuScreen() {
 
@@ -13,7 +14,7 @@ export default function MenuScreen() {
         case 'botones':
             return <BotonesScreen/>
         case 'texto':
-            return <Screen/>
+            return <TextoinputScreen/>
         case 'fondo':
             return <Screen/>
         case 'desplaza':
