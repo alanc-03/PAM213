@@ -22,7 +22,7 @@ export default function TextoinputScreen () {
     }
     else{
       if(Platform.OS === 'web'){
-        alert(`Bienvenido, ${nombre}!`);//usamos comillas invertidas para que aparezca en azul el ${nombre}
+        alert(`Bienvenido, ${nombre}!`);//usamos comillas invertidas para la funcion
       }
       else{
         Alert.alert(

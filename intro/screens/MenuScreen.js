@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import ContadorScreen from './ContadorScreen'
 import BotonesScreen from './BotonesScreen'
 import TextoinputScreen from './TextoinputScreen';
+import FondoScreen from './FondoScreen';
+import Botones2Screen from './Botones2Screen';
 
 export default function MenuScreen() {
 
@@ -16,7 +18,7 @@ export default function MenuScreen() {
         case 'texto':
             return <TextoinputScreen/>
         case 'fondo':
-            return <Screen/>
+            return <FondoScreen/>
         case 'desplaza':
             return <Screen/>
         case 'indicadores':
@@ -26,7 +28,7 @@ export default function MenuScreen() {
         case 'modales':
             return <Screen/>
         case 'botones2':
-            return <Screen/>
+            return <Botones2Screen/>
         case 'menu':
             default: 
                 return (
