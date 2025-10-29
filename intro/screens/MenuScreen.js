@@ -5,6 +5,7 @@ import BotonesScreen from './BotonesScreen'
 import TextoinputScreen from './TextoinputScreen';
 import FondoScreen from './FondoScreen';
 import Botones2Screen from './Botones2Screen';
+import RepasoScreen from './repasoScreen';
 
 export default function MenuScreen() {
 
@@ -29,6 +30,8 @@ export default function MenuScreen() {
             return <Screen/>
         case 'botones2':
             return <Botones2Screen/>
+        case 'Repaso':
+            return <RepasoScreen/>
         case 'menu':
             default: 
                 return (
@@ -44,6 +47,7 @@ export default function MenuScreen() {
                       <Button color='brown' title='Pract:FlatList' onPress={()=> setScreen ('lista')} />
                       <Button color='red' title='Pract:Modal' onPress={()=> setScreen ('modales')} />
                       <Button color='purple' title='Pract:Bottom Sheet' onPress={()=> setScreen ('botones2')} />
+                      <Button color='red' title='Repaso' onPress={()=> setScreen ('Repaso')} />
                     </View>
                     </View>
     )
