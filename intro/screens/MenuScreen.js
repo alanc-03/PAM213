@@ -7,6 +7,7 @@ import FondoScreen from './FondoScreen';
 import Botones2Screen from './Botones2Screen';
 import RepasoScreen from './repasoScreen';
 import DesplazaScreen from './DesplazaScreen';
+import IndicadoresScreen from './IndicadoresScreen';
 
 export default function MenuScreen() {
 
@@ -24,7 +25,7 @@ export default function MenuScreen() {
         case 'desplaza':
             return <DesplazaScreen/>
         case 'indicadores':
-            return <Screen/>
+            return <IndicadoresScreen/>
         case 'lista':
             return <Screen/>
         case 'modales':
