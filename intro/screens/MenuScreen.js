@@ -1,4 +1,4 @@
-import { Text, StyleSheet, View, Button } from 'react-native'
+import { Text, StyleSheet, View, Button, SectionList } from 'react-native'
 import React, { useState } from 'react'
 import ContadorScreen from './ContadorScreen'
 import BotonesScreen from './BotonesScreen'
@@ -9,6 +9,8 @@ import RepasoScreen from './repasoScreen';
 import DesplazaScreen from './DesplazaScreen';
 import IndicadoresScreen from './IndicadoresScreen';
 import ListaScreen from './ListaScreen';
+import SecctionList from './SeccitionList'
+import ModalesScreen from './ModalesScreen';
 
 export default function MenuScreen() {
 
@@ -29,8 +31,10 @@ export default function MenuScreen() {
             return <IndicadoresScreen/>
         case 'lista':
             return <ListaScreen/>
+        case 'seccion':
+            return <SecctionList/>
         case 'modales':
-            return <Screen/>
+            return <ModalesScreen/>
         case 'botones2':
             return <Botones2Screen/>
         case 'Repaso':
@@ -48,6 +52,7 @@ export default function MenuScreen() {
                       <Button color='blue' title='Pract:ScrollView' onPress={()=> setScreen ('desplaza')} />
                       <Button color='orange' title='Pract:ActivityIndicator' onPress={()=> setScreen ('indicadores')} />
                       <Button color='brown' title='Pract:FlatList' onPress={()=> setScreen ('lista')} />
+                      <Button color='yellow' title='Practica: List section' onPress={()=> setScreen ('seccion') }></Button>
                       <Button color='red' title='Pract:Modal' onPress={()=> setScreen ('modales')} />
                       <Button color='purple' title='Pract:Bottom Sheet' onPress={()=> setScreen ('botones2')} />
                       <Button color='red' title='Repaso' onPress={()=> setScreen ('Repaso')} />
