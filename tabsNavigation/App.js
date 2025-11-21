@@ -1,16 +1,19 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
+import 'react-native-gesture-handler';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import Home from './screens/Home';
 import Profile from './screens/Profile';
 import Settings from './screens/Settings';
+import Detalle from './screens/Detalle'
 
 const Tab = createBottomTabNavigator();
+const Stack = createStackNavigator();
 
-export default function App() {
+ function Tabs() {
   return (
-    <NavigationContainer>
       <Tab.Navigator
         initialRouteName="Home"
         screenOptions={({ route }) => ({
@@ -39,6 +42,15 @@ export default function App() {
         <Tab.Screen name="Profile" component={Profile} />
         <Tab.Screen name="Settings" component={Settings} />
       </Tab.Navigator>
-    </NavigationContainer>
   );
 }
+  export default function App(){
+    return(
+      <NavigationContainer>
+        <Stack.Navigator>
+        <Stack.Screen name="Tabs" component={Tabs} options={{headerShown: false}}/>
+        <Stack.Screen name="Detalle" component={Detalle} options={{title: 'Detalles del usuario'}}/>
+      </Stack.Navigator>
+
+      </NavigationContainer>    );
+  }
